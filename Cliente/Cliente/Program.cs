@@ -13,6 +13,7 @@ namespace Cliente
     {
         private static void Main(string[] args)
         {
+            //Start thread
             var threadNumbers = new Thread(new ThreadStart(GenerateRandomNumbers));
             threadNumbers.Start();
         }

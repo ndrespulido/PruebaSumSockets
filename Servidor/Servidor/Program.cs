@@ -19,6 +19,8 @@ namespace Servidor
             receiverSocket.Bind(receiverSocketAddress);
             receiverSocket.Listen(1);
             var mySocket = new TCPSocketListener(receiverSocket);
+
+            //Start listening
             mySocket.StartSocketListener();
             receiverSocket.Close();
 

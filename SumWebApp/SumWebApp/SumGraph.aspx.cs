@@ -43,6 +43,7 @@ namespace SumWebApp
             
             
             var newThread = new Thread(new ThreadStart(SocketListenerThreadStart));
+            //start thread
             newThread.Start();
 
             //mySocket.StartSocketListener();
